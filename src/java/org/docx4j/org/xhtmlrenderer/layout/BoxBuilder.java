@@ -202,7 +202,7 @@ public class BoxBuilder {
                     child = createInlineBox(text.toString(), parent, parentStyle, textNode);
                     */
 
-                    if (parent.getLocalName().equals("script") 
+                    if (parent != null && parent.getLocalName() != null && parent.getLocalName().equals("script") 
 //                            || textNode.getTextContent().trim().equals("")
                             )  {
                         // This is an important change, for us. It gets rid of a lot of extra unwanted parents inserted
